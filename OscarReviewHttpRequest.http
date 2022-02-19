@@ -1,0 +1,43 @@
+### Get all TodoItems
+GET http://localhost:8080/dmit2015-1212-oe01-assignment03-est-gonzalez/OscarReviews
+
+### Get a single TodoItem with an id of 1
+GET http://localhost:8080/dmit2015-1212-oe01-assignment03-est-gonzalez/OscarReviews/1
+
+### POST a new TodoItem with valid data
+POST http://localhost:8080//dmit2015-1212-oe01-assignment03-est-gonzalez/webapi/OscarReviews
+Content-Type: application/json
+
+{
+  "name": "Start DMIT2015 Assignment 3",
+  "complete":false
+}
+
+### POST a new TodoItem with invalid data
+POST http://localhost:8080//dmit2015-1212-oe01-assignment03-est-gonzalez/webapi/OscarReviews
+Content-Type: application/json
+
+{
+  "name": "     ",
+  "complete":false
+}
+
+### Get a single TodoItem with an id of 4
+GET http://localhost:8080/dmit2015-1212-oe01-assignment03-est-gonzalez/OscarReviews/5
+
+### Update TodoItem with an id of 4 with valid data
+PUT http://localhost:8080/dmit2015-1212-oe01-assignment03-est-gonzalez/OscarReviews/5
+Content-Type: application/json
+
+{
+  "id":4,
+  "name":"Commit DMIT2015 Assignment 3",
+  "complete":true,
+  "version": 0
+}
+
+### Delete an TodoItem with an id of 2
+DELETE http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems/2
+
+### Delete an TodoItem with an id of 4
+DELETE http://localhost:8080/dmit2015-1212-jaxrs-demo/webapi/TodoItems/4
